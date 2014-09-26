@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1411694631 source:c:\users\brandon\desktop\sdl\pizzafrank\main.cpp
+1411696854 source:c:\users\brandon\desktop\sdl\pizzafrank\main.cpp
 	<SDL.h>
 	<stdio.h>
 	<math.h>
@@ -331,7 +331,7 @@
 	<stdio.h>
 	<SDL.h>
 
-1411694568 c:\users\brandon\desktop\sdl\pizzafrank\app.h
+1411696760 c:\users\brandon\desktop\sdl\pizzafrank\app.h
 	"EventListener.h"
 	<SDL.h>
 
@@ -341,4 +341,10 @@
 1410989045 source:c:\users\brandon\desktop\sdl\pizzafrank\eventlistener.cpp
 	"EventListener.h"
 	<stdio.h>
+
+1411697045 source:c:\users\brandon\desktop\sdl\pizzafrank\sprite.cpp
+	"Sprite.h"
+
+1411697128 c:\users\brandon\desktop\sdl\pizzafrank\sprite.h
+	<SDL.h>
 

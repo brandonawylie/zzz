@@ -1,20 +1,20 @@
-#include "SDL.h"
+#include <SDL.h>
 
 class Sprite{
     public:
-        Sprite(int x, int y);
-        ~Sprite();
+        Sprite(int x, int y, int width, int height);
+        virtual ~Sprite();
         /**
         * Update the sprite & all sub-components
         * @param deltaTime milliseconds passed since the last update
         */
-        virtual void update(Uint32 deltaTime);
+        virtual void update(Uint32 deltaTime){}
 
         /**
         * Draw the Sprite & all sub-components
         * @param renderer Use it for all your SDL rendering needs (don't render this to the screen)
         */
-        virtual void draw(SDL_Renderer* renderer);
+        virtual void draw(SDL_Renderer* renderer){}
 
     protected:
         /**

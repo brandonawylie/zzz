@@ -21,10 +21,10 @@ int main (int argc, char* argv[]) {
         if (window == NULL) {
             printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
         } else {
-            // initialize the App
             app = App(window);
             app.init();
-            Uint32 last, now, deltaTime;
+
+            Uint32 last = 0, now = SDL_GetTicks(), deltaTime = 0;
             SDL_Event event;
 
             SDL_Renderer* renderer = NULL;
@@ -33,7 +33,7 @@ int main (int argc, char* argv[]) {
             float fps = 0.0f;
             bool quit = false;
             last = now = 0;
-            while (true && !quit) {
+            while (!quit) {
 
                 while (SDL_PollEvent(&event)) {
                     app.onEvent(&event);
@@ -57,7 +57,6 @@ int main (int argc, char* argv[]) {
                 // Get the draw data from the sprites and then render to the screen
                 app.draw(renderer);
                 SDL_RenderPresent(renderer);
-
 
 
                 if (quit)

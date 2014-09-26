@@ -1,3 +1,6 @@
+#ifndef _SPRITE_H_
+    #define _SPRITE_H_
+
 #include <SDL.h>
 
 class Sprite{
@@ -24,6 +27,8 @@ class Sprite{
         int y;
         int width;
         int height;
+        float dx;
+        float dy;
 
         /**
         * Shortcut for a Collision Group of 0b0000
@@ -40,3 +45,4 @@ class Sprite{
         */
         short collisionMask;
 };
+#endif // _SPRITE_H_

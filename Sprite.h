@@ -31,9 +31,12 @@ class Sprite{
         bool isGhost;
 
         /**
-        * Collision Group represents the group that this Sprite collides with.
-        * 0b0000 will collide with nothing
-        * 0b0001 will collide with all other 0b0001 objects & so on.
+        * Collision Group represents the group that this Sprite belongs to
         */
         short collisionGroup;
+
+        /**
+        * Collision Mask is a bit mask for the collision group to see what other groups it collides with.
+        */
+        short collisionMask;
 };

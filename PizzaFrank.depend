@@ -326,7 +326,7 @@
 	<SDL.h>
 	<stdio.h>
 
-1411694573 source:c:\users\brandon\desktop\sdl\pizzafrank\app.cpp
+1411774035 source:c:\users\brandon\desktop\sdl\pizzafrank\app.cpp
 	"App.h"
 	<stdio.h>
 	<SDL.h>
@@ -347,4 +347,10 @@
 
 1411747357 c:\users\brandon\desktop\sdl\pizzafrank\sprite.h
 	<SDL.h>
+
+1411747272 source:c:\users\brandon\desktop\sdl\pizzafrank\player.cpp
+	"Player.h"
+
+1411747328 c:\users\brandon\desktop\sdl\pizzafrank\player.h
+	"Sprite.h"
 

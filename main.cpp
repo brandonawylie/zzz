@@ -60,6 +60,10 @@ int main (int argc, char* argv[]) {
                 // Let app do its thing
                 quit = app.update(deltaTime);
 
+                // Clear the screen
+                SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+                SDL_RenderClear(renderer);
+
                 // Get the draw data from the sprites and then render to the screen
                 app.draw(renderer);
                 SDL_RenderPresent(renderer);

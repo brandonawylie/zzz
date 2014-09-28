@@ -63,6 +63,7 @@ class Sprite{
         */
         void setHeight(int height){this->height = height;}
 
+
         /**
         * Gets the ghost status of this sprite. A ghost is a sprite that ignores collision
         * and gravity, but still sends events when it collides with something.

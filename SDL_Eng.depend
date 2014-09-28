@@ -358,17 +358,17 @@
 	<stdio.h>
 	"../include/Player.h"
 
-1411935440 c:\users\brandon\desktop\sdl\pizzafrank\src\include\player.h
+1411943695 c:\users\brandon\desktop\sdl\pizzafrank\src\include\player.h
 	"Sprite.h"
 
-1411940905 c:\users\brandon\desktop\sdl\pizzafrank\src\include\sprite.h
+1411943619 c:\users\brandon\desktop\sdl\pizzafrank\src\include\sprite.h
 	<SDL.h>
 
-1411942434 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\sprite.cpp
+1411943488 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\sprite.cpp
 	<stdio.h>
 	"../include/Sprite.h"
 
-1411942545 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\app.cpp
+1411943673 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\app.cpp
 	<stdio.h>
 	<SDL.h>
 	<windows.h>

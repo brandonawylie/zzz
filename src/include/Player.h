@@ -17,6 +17,11 @@ class Player : protected Sprite {
         void moveRight();
 
         /**
+        * Stop the player movement
+        */
+        void stopMoving();
+
+        /**
         * Make the player jump
         */
         void jump();

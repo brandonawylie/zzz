@@ -26,7 +26,8 @@ Sprite::Sprite(int x, int y, int width, int height, bool isGhost, short collisio
 Sprite::~Sprite(){}
 
 void Sprite::update(Uint32 deltaTime) {
-
+    x += dx;
+    y += dy;
 }
 
 void Sprite::draw(SDL_Renderer* renderer) {

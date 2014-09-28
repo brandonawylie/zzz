@@ -29,7 +29,7 @@ bool App::update(Uint32 dt){
 }
 
 void App::draw(SDL_Renderer* renderer) {
-
+    player->draw(renderer);
 }
 
 void App::onEvent(SDL_Event* event) {
@@ -37,23 +37,38 @@ void App::onEvent(SDL_Event* event) {
 }
 
 void App::onKeyDown(SDL_Keycode sym) {
-    /*
     if (sym == SDLK_w) {
-        playerEx.y-=4;
+        player->jump();
     }
 
     if (sym == SDLK_s) {
-        playerEx.y+=4;
+        return;
     }
 
     if (sym == SDLK_a) {
-        playerEx.x-=4;
+        player->moveLeft();
     }
 
     if (sym == SDLK_d) {
-        playerEx.x+=4;
+        player->moveRight();
     }
-    */
+
 }
 
-void App::onKeyUp(SDL_Keycode sym){}
+void App::onKeyUp(SDL_Keycode sym){
+    if (sym == SDLK_w) {
+        player->jump();
+    }
+
+    if (sym == SDLK_s) {
+        return;
+    }
+
+    if (sym == SDLK_a) {
+        player->stopMoving();
+    }
+
+    if (sym == SDLK_d) {
+        player->stopMoving();
+    }
+}

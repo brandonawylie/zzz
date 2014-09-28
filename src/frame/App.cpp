@@ -13,8 +13,7 @@ App::~App() {
 }
 
 void App::init() {
-    playerEx = {50, 50, 64, 64};
-    sprite = new Sprite(0,0,0,0);
+
 }
 
 void App::cleanup() {
@@ -22,7 +21,7 @@ void App::cleanup() {
 }
 
 bool App::update(Uint32 dt){
-    sprite->update(dt);
+
     return false;
 }
 

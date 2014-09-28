@@ -107,6 +107,7 @@ class Sprite{
         int height;
         float dx;
         float dy;
+        float speed;
 
         /**
         * Shortcut for a Collision Group of 0b0000

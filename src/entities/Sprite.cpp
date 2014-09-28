@@ -1,4 +1,5 @@
 #include "../include/Sprite.h"
+#include <windows.h>
 
 Sprite::Sprite(int x, int y, int width, int height) {
     this->x = x;
@@ -23,6 +24,14 @@ Sprite::Sprite(int x, int y, int width, int height, bool isGhost, short collisio
 }
 
 Sprite::~Sprite(){}
+
+void Sprite::update(Uint32 deltaTime) {
+
+}
+
+void Sprite::draw(SDL_Renderer* renderer) {
+
+}
 
 
 

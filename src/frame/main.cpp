@@ -1,7 +1,7 @@
 #include <SDL.h>
 #include <stdio.h>
 #include <math.h>
-#include "App.h"
+#include "../include/App.h"
 
 
 // Constants for screen dimensions

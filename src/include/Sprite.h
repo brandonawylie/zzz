@@ -6,7 +6,7 @@
 class Sprite{
     public:
         Sprite(int x, int y, int width, int height);
-        Sprite(int x, int y, int width, int height, bool isGhost, short collisionGroup, short collisionGroup);
+        Sprite(int x, int y, int width, int height, bool isGhost, short collisionGroup, short collisionMask);
         virtual ~Sprite();
 
         /**
@@ -68,7 +68,7 @@ class Sprite{
         * and gravity, but still sends events when it collides with something.
         * @return bool indicating ghost status
         */
-        bool isGhost(){return isGhost;}
+        bool GetIsGhost(){return isGhost;}
         /**
         * Sets the ghost status of this sprite. A ghost is a sprite that ignores collision
         * and gravity, but still sends events when it collides with something.

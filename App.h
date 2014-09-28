@@ -44,6 +44,12 @@ class App: public EventListener{
         */
         void onKeyDown(SDL_Keycode sym);
 
+        /**
+        * Callback for when a key is released
+        * @param sym the key symbol that was released (use sym.sym)
+        */
+        void onKeyUp(SDL_Keycode sym);
+
     private:
         SDL_Window* window;
 };

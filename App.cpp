@@ -35,18 +35,20 @@ void App::onEvent(SDL_Event* event) {
 void App::onKeyDown(SDL_Keycode sym) {
 
     if (sym == SDLK_w) {
-        playerEx.y++;
+        playerEx.y-=4;
     }
 
     if (sym == SDLK_s) {
-        playerEx.y--;
+        playerEx.y+=4;
     }
 
     if (sym == SDLK_a) {
-        playerEx.x--;
+        playerEx.x-=4;
     }
 
     if (sym == SDLK_d) {
-        playerEx.x++;
+        playerEx.x+=4;
     }
 }
+
+void App::onKeyUp(SDL_Keycode sym){}

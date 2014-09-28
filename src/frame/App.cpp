@@ -1,7 +1,9 @@
-#include "../include/App.h"
-#include "../include/Sprite.h"
 #include <stdio.h>
 #include <SDL.h>
+#include <windows.h>
+#include "../include/App.h"
+#include "../include/Player.h"
+
 
 App::App(SDL_Window* window) {
     this->window = window;
@@ -11,9 +13,9 @@ App::App(SDL_Window* window) {
 App::~App() {
 
 }
-
+Player *player;
 void App::init() {
-
+    player = new Player(0,0);
 }
 
 void App::cleanup() {
@@ -21,7 +23,8 @@ void App::cleanup() {
 }
 
 bool App::update(Uint32 dt){
-
+    player->update(dt);
+    Sleep(20);
     return false;
 }
 

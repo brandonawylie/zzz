@@ -354,7 +354,8 @@
 1411747328 c:\users\brandon\desktop\sdl\pizzafrank\player.h
 	"Sprite.h"
 
-1411940927 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\player.cpp
+1411942445 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\player.cpp
+	<stdio.h>
 	"../include/Player.h"
 
 1411935440 c:\users\brandon\desktop\sdl\pizzafrank\src\include\player.h
@@ -363,15 +364,16 @@
 1411940905 c:\users\brandon\desktop\sdl\pizzafrank\src\include\sprite.h
 	<SDL.h>
 
-1411936034 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\sprite.cpp
+1411942434 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\sprite.cpp
+	<stdio.h>
 	"../include/Sprite.h"
-	<windows.h>
 
-1411935927 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\app.cpp
-	"../include/App.h"
-	"../include/Sprite.h"
+1411942545 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\app.cpp
 	<stdio.h>
 	<SDL.h>
+	<windows.h>
+	"../include/App.h"
+	"../include/Player.h"
 
 1411934928 c:\users\brandon\desktop\sdl\pizzafrank\src\include\app.h
 	"EventListener.h"
@@ -384,7 +386,7 @@
 	"../include/EventListener.h"
 	<stdio.h>
 
-1411934928 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\main.cpp
+1411943127 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\main.cpp
 	<SDL.h>
 	<stdio.h>
 	<math.h>

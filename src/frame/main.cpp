@@ -38,7 +38,7 @@ int main (int argc, char* argv[]) {
 
             bool quit = false;
             while (!quit) {
-
+                now = SDL_GetTicks();
                 while (SDL_PollEvent(&event)) {
                     // route the event to the App
                     app.onEvent(&event);
@@ -48,14 +48,7 @@ int main (int argc, char* argv[]) {
                         quit = true;
                 }
 
-                // Calculate the FPS
-                last = now;
-                now = SDL_GetTicks();
-                deltaTime = now - last;
-                if (deltaTime != 0)
-                    fps = 1000.0f/deltaTime;
-                else
-                    fps = 0.0f;
+
 
                 // Let app do its thing
                 quit = app.update(deltaTime);
@@ -67,6 +60,18 @@ int main (int argc, char* argv[]) {
                 // Get the draw data from the sprites and then render to the screen
                 app.draw(renderer);
                 SDL_RenderPresent(renderer);
+
+                // Calculate the FPS
+                last = now;
+                now = SDL_GetTicks();
+                deltaTime = now - last;
+                if (deltaTime != 0){
+                    fps = 1000.0f/deltaTime;
+                }
+                else
+                    fps = 0.0f;
+
+                printf("FPS: %.2f, DT: %d\n", fps, deltaTime);
 
                 // If we are quitting the App, make it clean up
                 if (quit)

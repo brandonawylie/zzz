@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include "../include/Sprite.h"
-#include <windows.h>
 
 Sprite::Sprite(int x, int y, int width, int height) {
     this->x = x;

@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "../include/Player.h"
 Player::Player(int x, int y) : Sprite(x, y, 32, 64) {
 

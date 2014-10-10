@@ -2,6 +2,7 @@
     #define _SPRITE_H_
 
 #include <SDL.h>
+#include <string>
 
 class Sprite{
     public:
@@ -98,6 +99,9 @@ class Sprite{
         */
         void setCollisionMask(short collisionMask){this->collisionMask = collisionMask;}
 
+        std::string getTag(){return this->tag;}
+        void setTag(std::string tag){this->tag = tag;}
+
     protected:
         /**
         * Basic properties showing the position & size of this objects.
@@ -109,6 +113,7 @@ class Sprite{
         float dx;
         float dy;
         float speed;
+        std::string tag;
 
         /**
         * Shortcut for a Collision Group of 0b0000

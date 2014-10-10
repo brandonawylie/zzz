@@ -36,15 +36,16 @@
 			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
 			<Add directory="C:/mingw_dev_lib/lib" />
 		</Linker>
-		<Unit filename="App.cpp" />
-		<Unit filename="App.h" />
-		<Unit filename="EventListener.cpp" />
-		<Unit filename="EventListener.h" />
-		<Unit filename="Player.cpp" />
-		<Unit filename="Player.h" />
-		<Unit filename="Sprite.cpp" />
-		<Unit filename="Sprite.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="src/entities/Player.cpp" />
+		<Unit filename="src/entities/Sprite.cpp" />
+		<Unit filename="src/frame/App.cpp" />
+		<Unit filename="src/frame/EventListener.cpp" />
+		<Unit filename="src/frame/main.cpp" />
+		<Unit filename="src/include/App.h" />
+		<Unit filename="src/include/EventListener.h" />
+		<Unit filename="src/include/Player.h" />
+		<Unit filename="src/include/Sprite.h" />
+		<Unit filename="src/include/World.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

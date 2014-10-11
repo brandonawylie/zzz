@@ -354,22 +354,22 @@
 1411747328 c:\users\brandon\desktop\sdl\pizzafrank\player.h
 	"Sprite.h"
 
-1412611043 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\player.cpp
+1413055473 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\player.cpp
 	<stdio.h>
 	"../include/Player.h"
 
-1412610992 c:\users\brandon\desktop\sdl\pizzafrank\src\include\player.h
+1413055396 c:\users\brandon\desktop\sdl\pizzafrank\src\include\player.h
 	"Sprite.h"
 
 1412957058 c:\users\brandon\desktop\sdl\pizzafrank\src\include\sprite.h
 	<SDL.h>
 	<string>
 
-1412611043 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\sprite.cpp
+1413055649 source:c:\users\brandon\desktop\sdl\pizzafrank\src\entities\sprite.cpp
 	<stdio.h>
 	"../include/Sprite.h"
 
-1412610992 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\app.cpp
+1413055451 source:c:\users\brandon\desktop\sdl\pizzafrank\src\frame\app.cpp
 	<stdio.h>
 	<SDL.h>
 	<windows.h>

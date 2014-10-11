@@ -38,11 +38,11 @@ void App::onEvent(SDL_Event* event) {
 
 void App::onKeyDown(SDL_Keycode sym) {
     if (sym == SDLK_w) {
-        player->jump();
+        player->moveUp();
     }
 
     if (sym == SDLK_s) {
-        return;
+       player->moveDown();
     }
 
     if (sym == SDLK_a) {
@@ -57,18 +57,18 @@ void App::onKeyDown(SDL_Keycode sym) {
 
 void App::onKeyUp(SDL_Keycode sym){
     if (sym == SDLK_w) {
-        player->jump();
+        player->stopMovingVertical();
     }
 
     if (sym == SDLK_s) {
-        return;
+        player->stopMovingVertical();
     }
 
     if (sym == SDLK_a) {
-        player->stopMoving();
+        player->stopMovingHorizontal();
     }
 
     if (sym == SDLK_d) {
-        player->stopMoving();
+        player->stopMovingHorizontal();
     }
 }

@@ -11,15 +11,15 @@ class Player : protected Sprite {
         * Move the player left
         */
         void moveLeft();
-        /**
-        * Move the player right
-        */
         void moveRight();
+        void moveDown();
+        void moveUp();
 
         /**
         * Stop the player movement
         */
-        void stopMoving();
+        void stopMovingHorizontal();
+        void stopMovingVertical();
 
         /**
         * Make the player jump
